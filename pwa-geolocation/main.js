@@ -14,6 +14,8 @@ let posicaoInicial;
 const capturarLocalizacao = document.getElementById('localizacao');
 const latitude = document.getElementById('latitude');
 const longitude = document.getElementById('longitude');
+let ilocation = `http://maps.google.com/maps?q=${posicaoInicial.cords.latitude},${posicaoInicial.cords.longitude}&z=16&output=embed`
+document.getElementsByTagName("iframe")[0].src = embedString;
 
 const sucesso = (posicao) => {
   posicaoInicial = posicao;
